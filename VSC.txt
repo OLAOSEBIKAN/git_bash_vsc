@@ -1,0 +1,11 @@
+git init
+git clone
+git status
+git show
+git log
+git log --oneline
+git log stat
+git log -p
+git log -p -w
+git add .
+git rm --cached filename

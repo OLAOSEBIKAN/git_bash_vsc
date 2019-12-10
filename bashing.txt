@@ -1,0 +1,52 @@
+ls = list directry
+-l = more detailed list
+-l /something*.txt = list all the files that has .txt
+-l /*something* = list all the files that has something in the middle
+echo 'hello!!!' = print hello!!!
+echo hello!! = print hello!! (x2)
+mv = mv 'Document/something' Document/books = move something into Documents/books directory
+curl -L 'address'= shows the source code of the address
+curl -o 'filename' -L 'address' = download everything from the address and save it in file name # -o means output to a file
+cat "somefile" = show the content of "somefile" at once
+less "somefile" = shows the content of "somefile" little by little
+less has " b to move back
+	   q to quit
+	   /search to search
+	   f to move forward"
+rm 'filename' = delete file permanently
+rm -i 'filemname' = interactive deletion
+rmdir 'directoryname' = delete folder permanently #only deletes an empty folder
+rmdir folder1 folder2 folder3 or rmdir 'folder 1' 'folder 2' 'folder 3' to delete multiple folders
+rm file1 file2 file3 or rm 'file 1' 'file 2' 'file 3' to delete multiple files or rm *commonkeyword*
+start . = opens your working directory in windows
+mv bash_profile .bash_profile = rename bash_profile to .bash_profile
+grep is used for word search
+grep = "global reular expression print"
+grep fish dictionary.txt = search for word fish in the file dictionary.txt
+grep display is limited to the screen so we can use less 
+grep fish dictionary.txt | less = will look for the word fish in dictionary and
+show it little by little
+curl -L 'address' | grep house = download something from the web and search for the word 
+house
+curl -L 'address' | grep house | wc -l = wc means word count. how many lines with the
+word house
+curl -L 'address' | grep -c house = grep counting the words it self
+shell variables{
+	variables are declared and displayed like this
+	declare == name='wale'
+	no space should be before and after the equal sign
+	display == $name
+}
+there are two types of variables
+1: shell variables these are internal variables to the shell itself
+e.g $LINE x $COLUMN
+2: environment variable e.g $PATH
+adding directory to your path so that the prorams in it could be run
+PATH=$PATH:/new/dir/here
+http://bashrcgenerator.com site to configure your bash profile
+PS1='$' your bash profile
+alias helps in keeping long commands short
+alias ll = 'ls la' is just like import pandas as pd
+to check what alias you have just run alias wiyhout an argument
+
+
